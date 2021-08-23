@@ -1,5 +1,5 @@
 import React from 'react';
-import landingStyles from '../styles/Landing.module.scss';
+import landingStyles from '../../styles/Landing/Landing.module.scss';
 import ToolLogos from "./ToolLogos";
 
 const Landing = ({scrollToWorks}) => {

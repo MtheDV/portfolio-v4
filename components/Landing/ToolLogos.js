@@ -1,15 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
-import toolLogoStyles from '../styles/ToolLogos.module.scss';
-import affinityLogo from '../public/assets/landing/affinity.svg';
-import cssLogo from '../public/assets/landing/css.svg';
-import djangoLogo from '../public/assets/landing/django.svg';
-import htmlLogo from '../public/assets/landing/html.svg';
-import javascriptLogo from '../public/assets/landing/javascript.svg';
-import nextLogo from '../public/assets/landing/next.svg';
-import pythonLogo from '../public/assets/landing/python.svg';
-import reactLogo from '../public/assets/landing/react.svg';
-import sassLogo from '../public/assets/landing/sass.svg';
+import toolLogoStyles from '../../styles/Landing/ToolLogos.module.scss';
+import affinityLogo from '../../public/assets/landing/affinity.svg';
+import cssLogo from '../../public/assets/landing/css.svg';
+import djangoLogo from '../../public/assets/landing/django.svg';
+import htmlLogo from '../../public/assets/landing/html.svg';
+import javascriptLogo from '../../public/assets/landing/javascript.svg';
+import nextLogo from '../../public/assets/landing/next.svg';
+import pythonLogo from '../../public/assets/landing/python.svg';
+import reactLogo from '../../public/assets/landing/react.svg';
+import sassLogo from '../../public/assets/landing/sass.svg';
 
 const ToolLogos = () => {
   return (

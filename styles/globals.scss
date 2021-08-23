@@ -8,8 +8,8 @@
   font-display: swap;
 }
 
-@import 'colours';
-@import 'mixins';
+@import './_mixins/colours';
+@import './_mixins/breakpoints';
 
 html,
 body {

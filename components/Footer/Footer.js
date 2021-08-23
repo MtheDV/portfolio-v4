@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import footerStyles from '../styles/Footer.module.scss';
-import brandingStyles from '../styles/Branding.module.scss';
+import footerStyles from '../../styles/Footer/Footer.module.scss';
+import brandingStyles from '../../styles/Branding.module.scss';
 
-import smileWhite from '../public/assets/smile-white.svg';
-import ScrollBanner from "./ScrollBanner";
+import smileWhite from '../../public/assets/smile-white.svg';
+import ScrollBanner from "../Effects/ScrollBanner";
 
 const Footer = () => {
   return (

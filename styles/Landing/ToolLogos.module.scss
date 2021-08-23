@@ -1,5 +1,5 @@
-@import "colours";
-@import "mixins";
+@import "../_mixins/colours";
+@import "../_mixins/breakpoints";
 
 .container {
   display: flex;

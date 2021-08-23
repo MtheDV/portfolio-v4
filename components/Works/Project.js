@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import projectStyles from '../styles/Project.module.scss';
+import projectStyles from '../../styles/Works/Project.module.scss';
 import {Tween, ScrollTrigger} from "react-gsap";
 
 const Project = ({project}) => {

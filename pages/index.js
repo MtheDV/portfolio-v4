@@ -1,6 +1,6 @@
 import {server} from "../config";
-import Landing from '../components/Landing';
-import Works from '../components/Works';
+import Landing from '../components/Landing/Landing';
+import Works from '../components/Works/Works';
 import mainStyles from '../styles/Main.module.scss';
 import {useRef} from "react";
 

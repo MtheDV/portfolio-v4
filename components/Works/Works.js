@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from "./Project";
-import workStyles from '../styles/Works.module.scss';
-import ScrollBanner from "./ScrollBanner";
+import workStyles from '../../styles/Works/Works.module.scss';
+import ScrollBanner from "../Effects/ScrollBanner";
 
 const Works = ({refProp, projects}) => {
   return (

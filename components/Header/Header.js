@@ -1,8 +1,8 @@
 import React from 'react';
-import headerStyles from "../styles/Header.module.scss";
-import brandingStyles from "../styles/Branding.module.scss";
+import headerStyles from "../../styles/Header/Header.module.scss";
+import brandingStyles from "../../styles/Branding.module.scss";
 import Image from "next/image";
-import smileWhite from "../public/assets/smile-white.svg";
+import smileWhite from "../../public/assets/smile-white.svg";
 import {Tween} from "react-gsap";
 
 const Header = () => {
