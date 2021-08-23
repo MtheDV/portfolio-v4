@@ -17,31 +17,31 @@ const ToolLogos = () => {
       <p className={toolLogoStyles.title}><small>Some tools I&apos;m working with:</small></p>
       <div className={toolLogoStyles.container}>
         <div className={toolLogoStyles.javascriptLogo}>
-          <Image src={javascriptLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={javascriptLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.htmlLogo}>
-          <Image src={htmlLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={htmlLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.cssLogo}>
-          <Image src={cssLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={cssLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.sassLogo}>
-          <Image src={sassLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={sassLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.nextLogo}>
-          <Image src={nextLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={nextLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.reactLogo}>
-          <Image src={reactLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={reactLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.affinityLogo}>
-          <Image src={affinityLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={affinityLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.djangoLogo}>
-          <Image src={djangoLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={djangoLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.pythonLogo}>
-          <Image src={pythonLogo} alt={'javascript'} layout={'responsive'}/>
+          <Image src={pythonLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
       </div>
     </>

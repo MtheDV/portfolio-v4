@@ -20,7 +20,7 @@ const Header = () => {
           {[...Array(6)].map((e, index) =>
             <span key={`header-${index}`} className={headerStyles.branding}>
               <div className={brandingStyles.logo}>
-                <Image src={smileWhite} alt={'black smiley'} layout={'responsive'}/>
+                <Image src={smileWhite} alt={'black smiley'} layout={'responsive'} priority={true}/>
               </div>
               mathew de vin
             </span>
