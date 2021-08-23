@@ -1,0 +1,17 @@
+@import "mixins";
+
+.logo {
+  width: 1.75rem;
+  height: auto;
+  margin-right: 0.5rem;
+
+  &Sm {
+    width: 1.5rem;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+
+  @include mobile {
+    width: 2rem;
+  }
+}

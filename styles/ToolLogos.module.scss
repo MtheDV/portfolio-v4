@@ -1,0 +1,117 @@
+@import "colours";
+@import "mixins";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1rem;
+
+  @include mobile {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1.25rem;
+  }
+}
+
+.title {
+  font-weight: bold;
+  color: $grey;
+  margin: 4rem 0 1rem;
+
+  @include mobile {
+    margin: 4rem 0 1.25rem;
+  }
+}
+
+.javascriptLogo {
+  position: relative;
+  width: 2.5em;
+
+  @include mobile {
+    margin-right: 2rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.htmlLogo {
+  position: relative;
+  width: 2.25em;
+
+  @include mobile {
+    margin-right: 2rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.cssLogo {
+  position: relative;
+  width: 2.25em;
+
+  @include mobile {
+    margin-right: 2rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.sassLogo {
+  position: relative;
+  width: 3.75em;
+
+  @include mobile {
+    margin-right: 2rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.nextLogo {
+  position: relative;
+  width: 5.5em;
+
+  @include mobile {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.reactLogo {
+  position: relative;
+  width: 3em;
+
+  @include mobile {
+    margin-right: 2rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.affinityLogo {
+  position: relative;
+  width: 8em;
+
+  @include mobile {
+    margin-right: 2rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.djangoLogo {
+  position: relative;
+  width: 6em;
+
+  @include mobile {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.pythonLogo {
+  position: relative;
+  width: 7em;
+
+  @include mobile {
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+  }
+}

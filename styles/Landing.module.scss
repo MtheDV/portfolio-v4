@@ -1,0 +1,31 @@
+@import 'colours';
+@import 'mixins';
+
+.landing {
+  display: grid;
+  grid-template-columns: 17% 66% 17%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 50rem;
+
+  @include mobile {
+    box-sizing: border-box;
+    grid-template-columns: 8% 84% 8%;
+    height: auto;
+    min-height: 100vh;
+    padding: 3rem 0;
+  }
+}
+
+.content {
+  grid-column: 2 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  @include mobile {
+    justify-content: center;
+  }
+}

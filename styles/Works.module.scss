@@ -1,0 +1,10 @@
+@import 'mixins';
+
+.works {
+  display: grid;
+  grid-template-columns: 17% 66% 17%;
+
+  @include mobile {
+    grid-template-columns: 8% 84% 8%;
+  }
+}

@@ -1,0 +1,29 @@
+@import 'colours';
+
+.background {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+  background-color: $black;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  &Light {
+    background-color: $white;
+  }
+}
+
+.text {
+  display: inline-block;
+  text-wrap: none;
+  white-space: nowrap;
+  font-size: 5rem;
+  color: $white;
+  margin-right: 1rem;
+
+  &Light {
+    color: $black;
+  }
+}

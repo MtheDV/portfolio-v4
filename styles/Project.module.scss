@@ -1,0 +1,79 @@
+@import 'colours';
+@import 'mixins';
+
+.preview {
+  grid-column: 2 / 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 6rem 0;
+
+  &:first-child {
+    padding-top: 12rem;
+  }
+  &:last-child {
+    padding-bottom: 12rem;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    overflow: visible;
+    align-items: flex-start;
+  }
+}
+
+.image {
+  position: relative;
+  width: 30rem;
+  height: 20rem;
+  transform-origin: left center;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.descriptionContent {
+  margin-right: 5rem;
+
+  @include mobile {
+    margin-right: 0;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem;
+}
+
+.tag {
+  border-radius: 9999px;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem 0.5rem 0 0;
+  background-color: $black;
+  color: $white;
+  cursor: default;
+
+  @include mobile {
+    font-size: 1.25rem;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 7rem;
+
+  @include mobile {
+    font-size: 5.5rem;
+  }
+}
+
+.description {
+  margin: 0 0 1.5rem;
+}

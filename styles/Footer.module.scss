@@ -1,0 +1,49 @@
+@import 'colours';
+@import 'mixins';
+
+.footer {
+  background-color: $black;
+  color: $white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 1.5rem;
+
+  @include mobile {
+    margin: 0 0 2.5rem;
+  }
+
+  li {
+    margin-right: 2rem;
+
+    @include mobile {
+      margin-right: 2.5rem;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    &:after {
+      background-color: $white;
+    }
+  }
+}
+
+.branding {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}

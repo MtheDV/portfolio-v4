@@ -1,0 +1,12 @@
+
+@import "colours";
+
+.spinner {
+  box-sizing: border-box;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: $black 0.5rem solid;
+  border-radius: 9999px;
+  border-color: $black $black $black transparent;
+}
