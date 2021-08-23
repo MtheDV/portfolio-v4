@@ -1,4 +1,4 @@
-export default {
+const SEO = {
   title: "Mathew de Vin",
   additionalLinkTags: [
     {
@@ -19,18 +19,6 @@ export default {
       href: "/seo/favicon-16x16.png"
     },
     {
-      rel: "preload",
-      href: "/fonts/ApfelGrotezk-Fett.woff2",
-      as: "font",
-      crossOrigin: ""
-    },
-    {
-      rel: "preload",
-      href: "/fonts/ApfelGrotezk-Fett.woff",
-      as: "font",
-      crossOrigin: ""
-    },
-    {
       rel: "manifest", href: "/seo/site.webmanifest"
     }
   ],
@@ -38,7 +26,7 @@ export default {
     type: "website",
     url: "https://mathewdevin.com",
     title: "Mathew de Vin - Portfolio",
-    description: "Hello my name is Mathew de Vin! Designer and developer. This is my portfolio where you can get a small glimpse of who I am and what I do",
+    description: "An in the works creative full stack developer, designer, and student.",
     images: [{
       url: "https://mathewdevin.com/seo/preview.jpg",
       width: 800,
@@ -50,3 +38,4 @@ export default {
     cardType: "summary_large_image"
   }
 }
+export default SEO;
