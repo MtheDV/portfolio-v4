@@ -20,28 +20,28 @@ const ToolLogos = () => {
           <Image src={javascriptLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.htmlLogo}>
-          <Image src={htmlLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
+          <Image src={htmlLogo} alt={'html'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.cssLogo}>
-          <Image src={cssLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
+          <Image src={cssLogo} alt={'css'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.sassLogo}>
-          <Image src={sassLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
+          <Image src={sassLogo} alt={'sass'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.nextLogo}>
-          <Image src={nextLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
+          <Image src={nextLogo} alt={'nextJs'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.reactLogo}>
-          <Image src={reactLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
+          <Image src={reactLogo} alt={'reactJs'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.affinityLogo}>
-          <Image src={affinityLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
+          <Image src={affinityLogo} alt={'affinity'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.djangoLogo}>
-          <Image src={djangoLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
+          <Image src={djangoLogo} alt={'django'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.pythonLogo}>
-          <Image src={pythonLogo} alt={'javascript'} layout={'responsive'} priority={true}/>
+          <Image src={pythonLogo} alt={'python'} layout={'responsive'} priority={true}/>
         </div>
       </div>
     </>

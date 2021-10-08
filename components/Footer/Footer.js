@@ -14,17 +14,23 @@ const Footer = () => {
       <footer className={footerStyles.footer}>
         <ul className={footerStyles.links}>
           <li>
-            <Link href={'/'}>
+            <Link href={'mailto:mathewdevin03@gmail.com'}
+                  target={"_blank"}
+                  rel={'noopener noreferrer'}>
               <a>email</a>
             </Link>
           </li>
           <li>
-            <Link href={'/'}>
+            <Link href={'https://www.linkedin.com/in/mathew-de-vin'}
+                  target={"_blank"}
+                  rel={'noopener noreferrer'}>
               <a>linked in</a>
             </Link>
           </li>
           <li>
-            <Link href={'/'}>
+            <Link href={'https://github.com/MtheDV'}
+                  target={"_blank"}
+                  rel={'noopener noreferrer'}>
               <a>github</a>
             </Link>
           </li>
