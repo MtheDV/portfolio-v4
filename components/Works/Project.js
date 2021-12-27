@@ -4,7 +4,7 @@ import projectStyles from '../../styles/Works/Project.module.scss';
 import {Tween, ScrollTrigger} from "react-gsap";
 
 const Project = ({project}) => {
-
+  
   return (
     <div className={projectStyles.preview}>
       <div className={projectStyles.descriptionContent}>
@@ -15,6 +15,7 @@ const Project = ({project}) => {
           )}
         </div>
         <p className={projectStyles.description}>{project.description}</p>
+        <p className={projectStyles.note}>{project.note}</p>
         <a href={project.link}
            target={'_blank'}
            rel={'noopener noreferrer'}>
