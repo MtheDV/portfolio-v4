@@ -12,10 +12,22 @@ export const projects = [
     link_title: "Github",
   },
   {
+    name: "computational_puzzles",
+    title: "Computational Puzzles",
+    description: "A scavenger hunt that brings computational thinking to the outdoors",
+    note: "Built as a group university project, with my contributions all throughout the app",
+    about: "",
+    tags:
+      ["Next.js", "SCSS", "Prisma", "NextAuth.js", "MapTiler Cloud API"],
+    images: ["slide1.jpg"],
+    link: "https://github.com/Computational-Puzzles/ComputationalPuzzles",
+    link_title: "Github",
+  },
+  {
     name: "teamable_analytics",
     title: "Teamable Analytics",
     description: "Team formation and analytics application",
-    note: "This is currently a closed source project, but a youtube video is available to watch.",
+    note: "Currently a closed source project, but a youtube video is available to watch.",
     about: "",
     tags:
       ["Django", "Python", "HTML/CSS", "JavaScript", "JQuery", "Twitter Bootstrap"],
@@ -27,9 +39,8 @@ export const projects = [
     name: "postn",
     title: "Postn",
     description: "An online discussions forum website",
-    note: "",
-    about:
-      "Postn is a discussion forum website. It allows registered users to participate in online discussions in a similar format to Reddit. Unregistered users will be allowed to view the discussions but will be unable to comment or create their own posts. Users can register, create or search through discussions (image or text-based), and reply to posts/comments. Password recovery and admin privileges, enabling and disabling accounts, is built in alongside error handling and messaging. The UI and UX was also designed and developed by me.",
+    note: "Built as a group university project, with my contributions all throughout the app",
+    about: "",
     tags:
       ["React.js", "Tailwind CSS", "Headless UI", "Axios", "Node JS", "Express JS", "Sequelize ORM"],
     images: [
@@ -78,9 +89,8 @@ export const projects = [
     name: "exodus",
     title: "Exodus",
     description: "A retro styled puzzle platformer",
-    note: "",
-    about:
-      "A platformer game, built using Java and the LibGDX framework. A personal project where you can play as a man trying to escape. Jump through dungeons and forests, killing skeletons and evil snails. The game consists of puzzles and boss battles at the end of each stage. Complete with custom music and art. Released on the Google Play Store, but no longer maintained.",
+    note: "Used to be published on the Google Play Store, but was taken down due to abandonment",
+    about: "",
     tags: ["Java", "LibGDX", "Pyxel Edit", "IntelliJ"],
     images: [
       "slide1.jpg",
@@ -98,9 +108,8 @@ export const projects = [
     name: "ecommerce",
     title: "Electric Car Ecommerce",
     description: "An electric car ecommerce website",
-    note: "",
-    about:
-      "A project created as part of a university class. Required to build an ecommerce website within a 4 person team following specific guidelines. The group decided on creating an electric vehicle ecommerce shop where users can browse a wide selection of vehicles, add them to their carts, place orders, leave reviews, and if customers leave the shop their carts will be saved. Customers can log in and admins can view pages not accessible to customers. Stock can be managed and profits monitored.",
+    note: "Built as a group university project, with my contributions all throughout the app",
+    about: "",
     tags:
       ["HTML/CSS", "Java Server Pages (JSP)", "SQL", "Twitter Bootstrap", "Webstorm"],
     images: [
