@@ -3,12 +3,14 @@ import {DefaultSeo} from 'next-seo';
 import SEO from '../next-seo.config';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+import NowPlaying from "../components/Spotify/NowPlaying";
 
 function MyApp({Component, pageProps}) {
   return (
     <>
       <DefaultSeo {...SEO}/>
       <Header/>
+      <NowPlaying />
       <Component {...pageProps}/>
       <Footer/>
     </>

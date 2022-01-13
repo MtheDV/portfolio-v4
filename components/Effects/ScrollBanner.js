@@ -12,7 +12,8 @@ const ScrollBanner = ({refProp, text, light}) => {
               x: '-600px'
             }}
             duration={3}
-            ease={'linear'}>
+            ease={'linear'}
+          >
             {[...Array(10)].map((e, index) =>
               <span className={`${scrollBannerStyles.text} ${light ? scrollBannerStyles.textLight : ''}`} key={`${text}-${index}`}>{text}</span>
             )}

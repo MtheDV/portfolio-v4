@@ -13,7 +13,7 @@ export const projects = [
   },
   {
     name: "computational_puzzles",
-    title: "Computational Puzzles",
+    title: "Computatio-\nnal Puzzles",
     description: "A scavenger hunt that brings computational thinking to the outdoors",
     note: "Built as a group university project, with my contributions all throughout the app",
     about: "",

@@ -15,7 +15,8 @@ const Header = () => {
           }}
           duration={3}
           ease={'linear'}
-          repeat={'-1'}>
+          repeat={'-1'}
+        >
           {[...Array(8)].map((e, index) =>
             <span key={`header-${index}`} className={headerStyles.branding}>
               <div className={brandingStyles.logo}>
