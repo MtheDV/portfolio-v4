@@ -48,33 +48,29 @@ const getAndUpdateToken = async () => {
 const handler = async (nowReq, nowRes) => {
   const url = process.env.SPOTIFY_API_BASE_URL + 'me/player/currently-playing';
   const auth_token = await getAndUpdateToken();
-  try {
-    return new Promise((resolve, reject) => {
-      fetch(url, {
-        headers: {
-          'Accept': 'application/json',
-          'Content-type': 'application/json',
-          'Authorization': `Bearer ${auth_token}`
-        }
-      }).then((res) => {
-        if (res.status !== 200) {
-          console.log(`Error status ${res.status} has occurred!`);
-          nowRes.status(res.status).json({'error': `There was an error fetching spotify now playing`})
-          reject();
-        } else {
-          res.json().then((data) => {
-            nowRes.status(200).json(data);
-            resolve();
-          });
-        }
-      }).catch((err) => {
-        nowRes.status(400).json({'error': `There was an error fetching spotify now playing: ${err}`});
-        reject();
-      });
+  return new Promise(() => {
+    fetch(url, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-type': 'application/json',
+        'Authorization': `Bearer ${auth_token}`
+      }
+    }).then((res) => {
+      if (res.status !== 200 && res.status !== 204) {
+        console.log(`Error status ${res.status} has occurred! ${JSON.stringify(res)}`);
+        nowRes.status(400);
+      } else if (res.status === 204) {
+        nowRes.status(204);
+      } else {
+        res.json().then((data) => {
+          nowRes.status(200).json(data);
+        });
+      }
+    }).catch((err) => {
+      console.log(`An Error has occurred fetching Spotify Now Playing! ${err}`);
+      nowRes.status(400);
     });
-  } catch (err) {
-    nowRes.status(400).json({'error': `There was an error fetching spotify now playing: ${err}`});
-  }
+  });
 }
 
 export default handler;

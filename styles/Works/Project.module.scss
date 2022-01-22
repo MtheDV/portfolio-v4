@@ -26,12 +26,7 @@
   }
 }
 
-.image {
-  position: relative;
-  width: 30rem;
-  height: 20rem;
-  transform-origin: left center;
-
+.carousel {
   @include mobile {
     display: none;
   }
@@ -39,6 +34,7 @@
 
 .descriptionContent {
   margin-right: 5rem;
+  min-width: 65%;
 
   @include mobile {
     margin-right: 0;

@@ -1,7 +1,6 @@
 import React from 'react';
-import Image from 'next/image';
 import projectStyles from '../../styles/Works/Project.module.scss';
-import {Tween, ScrollTrigger} from "react-gsap";
+import Carousel from "./Carousel";
 
 const Project = ({project}) => {
   
@@ -22,25 +21,9 @@ const Project = ({project}) => {
           <button>View on {project.link_title} -&gt;</button>
         </a>
       </div>
-      <ScrollTrigger start='top bottom' end='bottom top' scrub={0.5}>
-        <Tween
-          from={{
-            y: '100px',
-            rotation: 20
-          }}
-          to={{
-            y: '-150px',
-            rotation: -15
-          }}
-          duration={2}
-          ease={'linear'}>
-          <div className={projectStyles.image}>
-            <Image src={`/assets/${project.name}/${project.images[0]}`} alt={'project screenshot'} layout={'fill'}
-                   objectFit={'cover'} objectPosition={'center'} placeholder={'blur'}
-                   blurDataURL={'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMk/r/HwAE7QKAVeiSiAAAAABJRU5ErkJggg=='}/>
-          </div>
-        </Tween>
-      </ScrollTrigger>
+      <div className={projectStyles.carousel}>
+        <Carousel projectName={project.name} imageLinks={project.images}/>
+      </div>
     </div>
   );
 };

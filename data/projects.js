@@ -3,11 +3,18 @@ export const projects = [
     name: "canvas_gamification",
     title: "Canvas Gamification",
     description: "Application providing student coding practices, assignments, quizzes, or exams",
-    note: "Most work was provided within the \"canvas-gamification-ui\" repository",
+    note: "Refactored and modernized 30 plus different web page interfaces by implementing Taiga UI, a modern component library, allowing for the introduction of responsive design, accessible themes, and project UI scalability.",
     about: "",
     tags:
       ["Angular", "Typescript", "Taiga UI", "Jasmine", "Karma", "Django", "Python"],
-    images: ["slide1.jpg"],
+    images: [
+      "slide1.jpg",
+      "slide2.jpg",
+      "slide3.jpg",
+      "slide4.jpg",
+      "slide5.jpg",
+      "slide6.jpg"
+    ],
     link: "https://github.com/canvas-gamification",
     link_title: "Github",
   },
@@ -15,11 +22,15 @@ export const projects = [
     name: "computational_puzzles",
     title: "Computatio-\nnal Puzzles",
     description: "A scavenger hunt that brings computational thinking to the outdoors",
-    note: "Built as a group university project, with my contributions all throughout the app",
+    note: "Helped develop from the ground up. From the application UI/UX and structure to the development of multiple pages that allows the users to interact with the puzzles by discovering them on a map or by various search queries.",
     about: "",
     tags:
       ["Next.js", "SCSS", "Prisma", "NextAuth.js", "MapTiler Cloud API"],
-    images: ["slide1.jpg"],
+    images: [
+      "slide1.jpg",
+      "slide2.jpg",
+      "slide3.jpg"
+    ],
     link: "https://github.com/Computational-Puzzles/ComputationalPuzzles",
     link_title: "Github",
   },
@@ -27,11 +38,16 @@ export const projects = [
     name: "teamable_analytics",
     title: "Teamable Analytics",
     description: "Team formation and analytics application",
-    note: "Currently a closed source project, but a youtube video is available to watch.",
+    note: "Currently a closed source project. Contributions include removing and refactoring thousands of lines of redundant code all the while implementing new code aided by code standards and unit tests to ensure code stability while developing the app.",
     about: "",
     tags:
       ["Django", "Python", "HTML/CSS", "JavaScript", "JQuery", "Twitter Bootstrap"],
-    images: ["slide1.jpg"],
+    images: [
+      "slide1.jpg",
+      "slide2.jpg",
+      "slide3.jpg",
+      "slide4.jpg"
+    ],
     link: "https://www.youtube.com/watch?v=qAevPcDVhkY",
     link_title: "Youtube",
   },
@@ -39,7 +55,7 @@ export const projects = [
     name: "postn",
     title: "Postn",
     description: "An online discussions forum website",
-    note: "Built as a group university project, with my contributions all throughout the app",
+    note: "Built from the group up as part of a university project. Developed the application UI/UX and contributed towards the development of multiple user intractable pages from login/signup to viewing a post with comment threads.",
     about: "",
     tags:
       ["React.js", "Tailwind CSS", "Headless UI", "Axios", "Node JS", "Express JS", "Sequelize ORM"],
@@ -89,9 +105,9 @@ export const projects = [
     name: "exodus",
     title: "Exodus",
     description: "A retro styled puzzle platformer",
-    note: "Used to be published on the Google Play Store, but was taken down due to abandonment",
+    note: "Created as a side hobby while taking university classes. Developed to help strengthen coding and problem solving skills. Was finished and published on the Google Play Store, but has since been taken down.",
     about: "",
-    tags: ["Java", "LibGDX", "Pyxel Edit", "IntelliJ"],
+    tags: ["Java", "LibGDX"],
     images: [
       "slide1.jpg",
       "slide2.jpg",
@@ -108,10 +124,10 @@ export const projects = [
     name: "ecommerce",
     title: "Electric Car Ecommerce",
     description: "An electric car ecommerce website",
-    note: "Built as a group university project, with my contributions all throughout the app",
+    note: "Developed as a university project to strengthen knowledge in SQL queries and database development.",
     about: "",
     tags:
-      ["HTML/CSS", "Java Server Pages (JSP)", "SQL", "Twitter Bootstrap", "Webstorm"],
+      ["HTML/CSS", "Java Server Pages (JSP)", "SQL", "Twitter Bootstrap"],
     images: [
       "slide1.jpg",
       "slide2.jpg",
