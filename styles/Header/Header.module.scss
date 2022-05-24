@@ -1,40 +1,53 @@
 @import '../_mixins/colours';
 @import '../_mixins/breakpoints';
+@import '../_mixins/styles';
+@import '../_mixins/shadows';
 
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: $black;
-  background-color: $white;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  top: 1rem;
+  left: 1rem;
+  bottom: 1rem;
   z-index: 50;
-}
-
-.scrollingNames {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  color: $white;
+  width: 3rem;
   background-color: $black;
-  padding: 0 0.25rem;
-  height: 4rem;
-  transform-origin: bottom left;
-  transform: rotateZ(90deg) translateX(-5rem);
-}
+  color: $white;
+  border: solid 0.2rem $black-secondary;
+  border-radius: $border-radius-md;
+  overflow: hidden;
 
-.branding {
-  display: flex;
-  flex-direction: row;
-  white-space: nowrap;
-  align-items: baseline;
-  font-size: 3rem;
-  padding-right: 1rem;
+  @include shadow();
+
+  // If backdrop blur is supported, style accordingly.
+  @supports (backdrop-filter: blur()) {
+    backdrop-filter: blur(0.5rem);
+    background-color: rgba($black, 0.75);
+  }
+  // Otherwise style with no opacity effects in mind.
+  @supports not (backdrop-filter: blur()) {
+    background-color: $black;
+  }
+
+  &__scrolling_names {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0 0.25rem;
+    height: 3rem;
+    transform-origin: bottom left;
+    transform: rotateZ(90deg) translateX(-5rem);
+
+    &__branding {
+      display: flex;
+      flex-direction: row;
+      white-space: nowrap;
+      align-items: baseline;
+      font-size: 2rem;
+      padding-right: 1rem;
+    }
+  }
 }

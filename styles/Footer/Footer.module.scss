@@ -9,7 +9,10 @@
   flex-direction: column;
   align-items: center;
   padding: 6rem;
-  margin-left: 4rem;
+
+  @include mobile {
+    padding-left: 10rem;
+  }
 }
 
 .links {

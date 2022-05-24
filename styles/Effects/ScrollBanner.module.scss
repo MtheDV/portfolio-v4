@@ -1,4 +1,5 @@
 @import '../_mixins/colours';
+@import '../_mixins/breakpoints';
 
 .background {
   width: 100%;
@@ -9,6 +10,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
+  @include mobile {
+    width: calc(100% + 4rem);
+    margin-left: -4rem;
+  }
 
   &Light {
     background-color: $white;
