@@ -2,7 +2,8 @@
 @import '../_mixins/breakpoints';
 
 .background {
-  width: 100%;
+  width: calc(100% + 8rem);
+  margin-left: -6rem;
   height: auto;
   padding: 0.5rem 0;
   background-color: $black;
@@ -10,11 +11,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
-  @include mobile {
-    width: calc(100% + 4rem);
-    margin-left: -4rem;
-  }
 
   &Light {
     background-color: $white;
