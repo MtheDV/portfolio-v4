@@ -28,6 +28,10 @@
     background-color: $black;
   }
 
+  @include mobile {
+    max-width: 22.25rem;
+  }
+
   &__header {
     display: flex;
     align-items: center;
@@ -67,6 +71,8 @@
     &_album {
       width: 5rem;
       height: 5rem;
+      min-width: 5rem;
+      max-height: 5rem;
       margin-right: .65rem;
       border-radius: $border-radius-sm;
       overflow: hidden;
@@ -75,17 +81,22 @@
     &_details {
       &__name {
         font-size: 1rem;
-        white-space: nowrap;
         font-weight: bold;
         margin: 0;
+        width: 14rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
       &__artist {
         font-size: .8rem;
-        white-space: nowrap;
         margin: 0 0 .15rem 0;
         max-width: 50vw;
-        overflow-x: hidden;
+        width: 14rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
   }
