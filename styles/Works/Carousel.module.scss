@@ -1,27 +1,20 @@
 @import '../_mixins/colours';
 @import '../_mixins/breakpoints';
+@import '../_mixins/styles';
 
 .previewImage {
-  box-sizing: border-box;
   position: relative;
-  width: 30rem;
-  height: 20rem;
-  transform-origin: left center;
-  transition: all 0.25s;
+  width: 100%;
+  height: 100%;
+  border: solid 0.2rem $dark-white;
+  border-radius: $border-radius-md;
+  overflow: hidden;
 
-  img {
-    transition: all 0.25s;
-  }
+  transition: all 0.25s;
 
   &:hover {
     cursor: pointer;
-    border-width: 0.2rem;
-    border-radius: 1rem;
-    border-style: solid;
     border-color: $accent;
-
-    img {
-      border-radius: 0.85rem;
-    }
+    border-radius: $border-radius-lg;
   }
 }

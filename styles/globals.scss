@@ -13,6 +13,10 @@
 @import './_mixins/styles';
 @import './_mixins/shadows';
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
