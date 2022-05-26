@@ -1,63 +1,102 @@
 @import '../_mixins/colours';
 @import '../_mixins/breakpoints';
+@import '../_mixins/styles';
+@import '../_mixins/shadows';
 
-.nowPlaying {
+.now_playing {
   position: fixed;
-  bottom: 0;
-  left: 4rem;
-  right: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 8rem;
-  padding: .75rem;
-  background-color: $black;
-  color: $white;
+  bottom: 1rem;
+  left: 5rem;
   z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: $white;
+  padding: 0.75rem;
+  border: solid 0.2rem $black-secondary;
+  border-radius: $border-radius-md;
 
-  .right {
+  @include shadow();
+
+  // If backdrop blur is supported, style accordingly.
+  @supports (backdrop-filter: blur()) {
+    backdrop-filter: blur(0.5rem);
+    background-color: rgba($black, 0.75);
+  }
+  // Otherwise style with no opacity effects in mind.
+  @supports not (backdrop-filter: blur()) {
+    background-color: $black;
+  }
+
+  @include mobile {
+    max-width: 22.25rem;
+  }
+
+  &__header {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
 
-    .title {
+    &_title {
       white-space: nowrap;
-      margin: 0 .75rem 0;
+      margin: 0 2rem 0 0;
     }
 
-    .logo {
+    &_logo {
       width: 1.5rem;
       height: 1.5rem;
+      margin-right: 0.5rem;
+    }
+
+    &_compact {
+      font-size: 0.875rem;
+      margin-left: auto;
+      padding: 0.3rem 0.55rem;
+      border-radius: 9999px;
+      color: $white;
+      background-color: transparent;
+      border-color: transparent;
+      border-width: 0.1rem;
+
+      &:hover {
+        border-color: $white;
+      }
     }
   }
 
-  .left {
+  &__song {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    gap: 0.25rem;
 
-    .album {
-      width: 3rem;
-      height: 3rem;
+    &_album {
+      width: 5rem;
+      height: 5rem;
+      min-width: 5rem;
+      max-height: 5rem;
       margin-right: .65rem;
+      border-radius: $border-radius-sm;
+      overflow: hidden;
     }
 
-    .details {
-      .name {
+    &_details {
+      &__name {
         font-size: 1rem;
-        white-space: nowrap;
         font-weight: bold;
         margin: 0;
+        width: 13.25rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
 
-      .artist {
+      &__artist {
         font-size: .8rem;
-        white-space: nowrap;
         margin: 0 0 .15rem 0;
         max-width: 50vw;
-        overflow-x: hidden;
+        width: 13.25rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
   }

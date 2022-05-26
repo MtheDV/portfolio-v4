@@ -8,7 +8,7 @@ import {Tween} from "react-gsap";
 const Header = () => {
   return (
     <header className={headerStyles.header}>
-      <div className={headerStyles.scrollingNames}>
+      <div className={headerStyles.header__scrolling_names}>
         <Tween
           to={{
             x: '-100%'
@@ -18,8 +18,8 @@ const Header = () => {
           repeat={'-1'}
         >
           {[...Array(8)].map((e, index) =>
-            <span key={`header-${index}`} className={headerStyles.branding}>
-              <div className={brandingStyles.logo}>
+            <span key={`header-${index}`} className={headerStyles.header__scrolling_names__branding}>
+              <div className={brandingStyles.logoSm}>
                 <Image src={smileWhite} alt={'black smiley'} layout={'responsive'} priority={true}/>
               </div>
               mathew de vin

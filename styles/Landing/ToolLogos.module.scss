@@ -9,7 +9,7 @@
   width: 100%;
   font-size: 1rem;
 
-  @include mobile {
+  @include tablet {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 1.25rem;
@@ -21,7 +21,7 @@
   color: $grey;
   margin: 4rem 0 1rem;
 
-  @include mobile {
+  @include tablet {
     margin: 4rem 0 1.25rem;
   }
 }
@@ -30,7 +30,7 @@
   position: relative;
   width: 2.5em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 2rem;
     margin-bottom: 0.75rem;
   }
@@ -40,7 +40,7 @@
   position: relative;
   width: 2.25em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 2rem;
     margin-bottom: 0.75rem;
   }
@@ -50,7 +50,7 @@
   position: relative;
   width: 2.25em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 2rem;
     margin-bottom: 0.75rem;
   }
@@ -60,7 +60,7 @@
   position: relative;
   width: 3.75em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 2rem;
     margin-bottom: 0.75rem;
   }
@@ -70,7 +70,7 @@
   position: relative;
   width: 5.5em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 0;
     margin-bottom: 0.75rem;
   }
@@ -80,7 +80,7 @@
   position: relative;
   width: 3em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 1rem;
     margin-bottom: 0.75rem;
   }
@@ -90,7 +90,7 @@
   position: relative;
   width: 3em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 1rem;
     margin-bottom: 0.75rem;
   }
@@ -100,7 +100,7 @@
   position: relative;
   width: 8em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 2rem;
     margin-bottom: 0.75rem;
   }
@@ -110,7 +110,7 @@
   position: relative;
   width: 6em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 1rem;
     margin-bottom: 0.75rem;
   }
@@ -120,7 +120,7 @@
   position: relative;
   width: 7em;
 
-  @include mobile {
+  @include tablet {
     margin-right: 0;
     margin-bottom: 0.75rem;
   }

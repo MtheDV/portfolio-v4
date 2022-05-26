@@ -1,7 +1,11 @@
 @import '../_mixins/colours';
+@import '../_mixins/breakpoints';
 
 .background {
-  width: 100%;
+  position: relative;
+  z-index: 25;
+  width: calc(100% + 6rem);
+  margin-left: -5rem;
   height: auto;
   padding: 0.5rem 0;
   background-color: $black;
