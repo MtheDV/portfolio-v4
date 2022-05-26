@@ -2,6 +2,8 @@
 @import '../_mixins/breakpoints';
 
 .background {
+  position: relative;
+  z-index: 25;
   width: calc(100% + 6rem);
   margin-left: -5rem;
   height: auto;
