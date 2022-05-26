@@ -6,10 +6,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: clamp(65rem, 80%, 75rem);
   font-size: 1rem;
 
   @include tablet {
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: 1.25rem;
