@@ -29,7 +29,7 @@
   }
 
   @include mobile {
-    max-width: 22.25rem;
+    display: none;
   }
 
   &__header {
@@ -66,14 +66,13 @@
   &__song {
     display: flex;
     align-items: center;
-    gap: 0.25rem;
+    gap: 1rem;
 
     &_album {
       width: 5rem;
       height: 5rem;
       min-width: 5rem;
       max-height: 5rem;
-      margin-right: .65rem;
       border-radius: $border-radius-sm;
       overflow: hidden;
     }
