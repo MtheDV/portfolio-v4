@@ -10,8 +10,9 @@ const Landing = ({scrollToWorks}) => {
       <section className={landingStyles.content}>
         <h1>Hi I&apos;m Mathew de Vin</h1>
         <p>
+          Developing for the web.<br/>
           An in the works creative front<br/>
-          end developer and designer.<br/>
+          end engineer and designer.<br/>
           Inspired by the aesthetics.
         </p>
         <div className={landingStyles.content__actions}>
