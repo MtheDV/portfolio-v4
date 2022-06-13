@@ -33,6 +33,10 @@
     align-items: center;
     gap: 1.5rem;
 
+    @include mobile {
+      gap: 2.25rem;
+    }
+
     a {
       display: flex;
       align-items: center;
@@ -50,7 +54,7 @@
 
       @include mobile {
         span {
-          display: none;
+          font-size: 1.4rem;
         }
       }
     }
@@ -59,6 +63,12 @@
       width: 1.5rem;
       height: 1.5rem;
       margin-right: 0.5rem;
+
+      @include mobile {
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-right: 0.75rem;
+      }
     }
   }
 }

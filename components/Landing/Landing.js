@@ -10,11 +10,21 @@ const Landing = ({scrollToWorks}) => {
       <section className={landingStyles.content}>
         <h1>Hi I&apos;m Mathew de Vin</h1>
         <p>
+          Developing for the web.<br/>
           An in the works creative front<br/>
-          end developer and designer.<br/>
+          end engineer and designer.<br/>
           Inspired by the aesthetics.
         </p>
-        <button onClick={scrollToWorks}>Check out my works -&gt;</button>
+        <div className={landingStyles.content__actions}>
+          <button onClick={scrollToWorks}>Check out my works ↓</button>
+          <a
+            href={'/assets/resume/resume-mathew-de-vin.pdf'}
+            target={'_blank'}
+            rel={'noopener noreferrer'}
+          >
+            <button>View my resume -&gt;</button>
+          </a>
+        </div>
         <ToolLogos/>
       </section>
     </StickyContainer>
