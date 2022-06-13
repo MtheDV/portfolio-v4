@@ -87,6 +87,16 @@
   }
 }
 
+.reduxLogo {
+  position: relative;
+  width: 3em;
+
+  @include tablet {
+    margin-right: 1rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
 .angularLogo {
   position: relative;
   width: 3em;

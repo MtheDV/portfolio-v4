@@ -6,10 +6,10 @@ import cssLogo from '../../public/assets/landing/css.svg';
 import djangoLogo from '../../public/assets/landing/django.svg';
 import htmlLogo from '../../public/assets/landing/html.svg';
 import typescriptLogo from '../../public/assets/landing/typescript.svg';
-import nextLogo from '../../public/assets/landing/next.svg';
 import pythonLogo from '../../public/assets/landing/python.svg';
 import reactLogo from '../../public/assets/landing/react.svg';
 import sassLogo from '../../public/assets/landing/sass.svg';
+import reduxLogo from '../../public/assets/landing/redux.svg';
 
 const ToolLogos = () => {
   return (
@@ -19,6 +19,12 @@ const ToolLogos = () => {
         <div className={toolLogoStyles.typescriptLogo}>
           <Image src={typescriptLogo} alt={'typescript'} layout={'responsive'} priority={true}/>
         </div>
+        <div className={toolLogoStyles.reactLogo}>
+          <Image src={reactLogo} alt={'reactJs'} layout={'responsive'} priority={true}/>
+        </div>
+        <div className={toolLogoStyles.reduxLogo}>
+          <Image src={reduxLogo} alt={'redux'} layout={'responsive'} priority={true}/>
+        </div>
         <div className={toolLogoStyles.htmlLogo}>
           <Image src={htmlLogo} alt={'html'} layout={'responsive'} priority={true}/>
         </div>
@@ -27,12 +33,6 @@ const ToolLogos = () => {
         </div>
         <div className={toolLogoStyles.sassLogo}>
           <Image src={sassLogo} alt={'sass'} layout={'responsive'} priority={true}/>
-        </div>
-        <div className={toolLogoStyles.nextLogo}>
-          <Image src={nextLogo} alt={'nextJs'} layout={'responsive'} priority={true}/>
-        </div>
-        <div className={toolLogoStyles.reactLogo}>
-          <Image src={reactLogo} alt={'reactJs'} layout={'responsive'} priority={true}/>
         </div>
         <div className={toolLogoStyles.angularLogo}>
           <Image src={angularLogo} alt={'angular'} layout={'responsive'} priority={true}/>
