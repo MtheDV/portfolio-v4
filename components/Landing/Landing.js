@@ -9,20 +9,26 @@ const Landing = ({scrollToWorks}) => {
     <StickyContainer>
       <section className={landingStyles.content}>
         <h1>Hi I&apos;m Mathew de Vin</h1>
-        <p>
-          Developing for the web.<br/>
-          An in the works creative front<br/>
-          end engineer and designer.<br/>
-          Inspired by the aesthetics.
-        </p>
+        <div className={landingStyles.content__intro}>
+          <p>
+            Developing for the web.
+          </p>
+          <p>
+            A creative front end
+            engineer and designer.
+          </p>
+          <p>
+            Inspired by the aesthetics.
+          </p>
+        </div>
         <div className={landingStyles.content__actions}>
-          <button onClick={scrollToWorks}>Check out my works ↓</button>
+          <button onClick={scrollToWorks}>Check out my works <span className={'button_arrow button_arrow__vertical'}>↓</span></button>
           <a
             href={'/assets/resume/resume-mathew-de-vin.pdf'}
             target={'_blank'}
             rel={'noopener noreferrer'}
           >
-            <button>View my resume -&gt;</button>
+            <button>View my resume <span className={'button_arrow button_arrow__horizontal'}>-&gt;</span></button>
           </a>
         </div>
         <ToolLogos/>

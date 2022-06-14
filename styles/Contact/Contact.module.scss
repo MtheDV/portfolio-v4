@@ -9,33 +9,13 @@
   right: 1rem;
   z-index: 50;
   color: $white;
-  padding: 0.75rem;
-  border: solid 0.2rem $black-secondary;
-  border-radius: $border-radius-md;
-
-  @include shadow();
-
-  // If backdrop blur is supported, style accordingly.
-  @supports (backdrop-filter: blur()) {
-    backdrop-filter: blur(0.5rem);
-    background-color: rgba($black, 0.75);
-  }
-  // Otherwise style with no opacity effects in mind.
-  @supports not (backdrop-filter: blur()) {
-    background-color: $black;
-  }
 
   &__links {
     list-style: none;
-    padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     gap: 1.5rem;
-
-    @include mobile {
-      gap: 2.25rem;
-    }
 
     a {
       display: flex;
@@ -43,6 +23,21 @@
       justify-content: center;
       transition: all 0.25s;
       font-size: unset;
+      padding: 0.75rem;
+      border: solid $border-width $black-secondary;
+      border-radius: $border-radius-md;
+
+      @include shadow();
+
+      // If backdrop blur is supported, style accordingly.
+      @supports (backdrop-filter: blur()) {
+        backdrop-filter: blur(0.5rem);
+        background-color: rgba($black, 0.75);
+      }
+      // Otherwise style with no opacity effects in mind.
+      @supports not (backdrop-filter: blur()) {
+        background-color: $black;
+      }
 
       &:after {
         content: none;
@@ -62,7 +57,7 @@
     svg {
       width: 1.5rem;
       height: 1.5rem;
-      margin-right: 0.5rem;
+      margin-right: 0.75rem;
 
       @include mobile {
         width: 2.25rem;

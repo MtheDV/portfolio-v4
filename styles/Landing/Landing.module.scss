@@ -7,10 +7,20 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  min-height: calc(100vh - 6rem - 0.2rem);
+  min-height: calc(100vh - 6rem - 0.3rem);
 
   @include mobile {
     justify-content: center;
+  }
+
+  &__intro {
+    color: $grey;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    p {
+      margin: 0.1rem;
+    }
   }
 
   &__actions {
