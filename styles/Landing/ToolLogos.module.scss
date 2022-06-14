@@ -28,50 +28,12 @@
 }
 
 @keyframes spin {
-  from {
-    rotate: 0deg;
-  }
-
-  to {
-    rotate: 360deg;
-  }
-}
-
-@mixin logo {
-  position: relative;
-  animation: spin 2s infinite linear;
-  animation-play-state: paused;
-  transition: all 0.25s linear;
-
-  &:hover {
-    z-index: 5;
-    animation-play-state: running;
-
-    &:before {
-      width: 10rem;
-      height: 10rem;
-      border: solid 0.2rem $accent;
-    }
-  }
-
-  &:before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    width: 0;
-    height: 0;
-    border: solid 0.2rem transparent;
-    border-radius: 9999px;
-    pointer-events: none;
-    transition: all 0.25s cubic-bezier(.68, -0.55, .27, 1.55);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
 .typescriptLogo {
-  @include logo;
   width: 2.5em;
 
   @include tablet {
@@ -81,7 +43,6 @@
 }
 
 .htmlLogo {
-  @include logo;
   width: 2.25em;
 
   @include tablet {
@@ -91,7 +52,6 @@
 }
 
 .cssLogo {
-  @include logo;
   width: 2.25em;
 
   @include tablet {
@@ -101,7 +61,6 @@
 }
 
 .sassLogo {
-  @include logo;
   width: 3.75em;
 
   @include tablet {
@@ -111,7 +70,6 @@
 }
 
 .nextLogo {
-  @include logo;
   width: 5.5em;
 
   @include tablet {
@@ -121,7 +79,6 @@
 }
 
 .reactLogo {
-  @include logo;
   width: 3em;
 
   @include tablet {
@@ -131,7 +88,6 @@
 }
 
 .reduxLogo {
-  @include logo;
   width: 3em;
 
   @include tablet {
@@ -141,7 +97,6 @@
 }
 
 .angularLogo {
-  @include logo;
   width: 3em;
 
   @include tablet {
@@ -151,7 +106,6 @@
 }
 
 .affinityLogo {
-  @include logo;
   width: 8em;
 
   @include tablet {
@@ -161,7 +115,6 @@
 }
 
 .djangoLogo {
-  @include logo;
   width: 6em;
 
   @include tablet {
@@ -171,7 +124,6 @@
 }
 
 .pythonLogo {
-  @include logo;
   width: 7em;
 
   @include tablet {
