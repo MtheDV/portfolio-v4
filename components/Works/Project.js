@@ -27,7 +27,7 @@ const Project = ({project}) => {
               <a href={project.website}
                  target={'_blank'}
                  rel={'noopener noreferrer'}>
-                <button>View on Website <span className={'button_arrow button_arrow__horizontal'}>-&gt;</span></button>
+                <button>View on website <span className={'button_arrow button_arrow__horizontal'}>-&gt;</span></button>
               </a>
             }
           </div>
