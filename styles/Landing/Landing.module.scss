@@ -13,6 +13,16 @@
     justify-content: center;
   }
 
+  &__intro {
+    color: $grey;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    p {
+      margin: 0.1rem;
+    }
+  }
+
   &__actions {
     display: flex;
     flex-direction: row;
