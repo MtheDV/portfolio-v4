@@ -70,8 +70,24 @@ button {
   transition: all 0.25s;
   white-space: nowrap;
 
+  .button_arrow {
+    display: inline-block;
+    font-family: unset;
+    transition: all 0.25s cubic-bezier(.68, -0.55, .27, 1.55);
+  }
+
   &:hover {
     border-color: $accent;
+
+    .button_arrow {
+      &__horizontal {
+        transform: translateX(0.3rem);
+      }
+
+      &__vertical {
+        transform: translateY(0.2rem);
+      }
+    }
   }
 }
 

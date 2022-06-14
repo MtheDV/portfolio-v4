@@ -21,13 +21,13 @@ const Project = ({project}) => {
             <a href={project.link}
                target={'_blank'}
                rel={'noopener noreferrer'}>
-              <button>View on {project.link_title} -&gt;</button>
+              <button>View on {project.link_title} <span className={'button_arrow button_arrow__horizontal'}>-&gt;</span></button>
             </a>
             {project.website &&
               <a href={project.website}
                  target={'_blank'}
                  rel={'noopener noreferrer'}>
-                <button>View on Website -&gt;</button>
+                <button>View on Website <span className={'button_arrow button_arrow__horizontal'}>-&gt;</span></button>
               </a>
             }
           </div>
