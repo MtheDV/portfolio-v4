@@ -2,12 +2,17 @@
 @import '../_mixins/styles';
 
 .sticky_container {
+
   &__content {
     position: relative;
     background-color: $white;
     border: solid $border-width $dark-white;
     border-radius: $border-radius-md;
     padding: 2rem;
+
+    &_background {
+      background-color: $dark-white;
+    }
   }
 
   @mixin border($top_bottom) {
