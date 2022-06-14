@@ -5,7 +5,7 @@
   &__content {
     position: relative;
     background-color: $white;
-    border: solid 0.2rem $dark-white;
+    border: solid $border-width $dark-white;
     border-top: none;
     border-bottom-left-radius: $border-radius-md;
     border-bottom-right-radius: $border-radius-md;
@@ -40,7 +40,7 @@
       height: 1rem;
 
       @if ($top_bottom == top) {
-        border: solid 0.2rem $dark-white;
+        border: solid $border-width $dark-white;
         border-bottom: none;
         border-top-left-radius: $border-radius-md;
         border-top-right-radius: $border-radius-md;
@@ -49,7 +49,7 @@
       }
 
       @if ($top_bottom == bottom) {
-        border: solid 0.2rem transparent;
+        border: solid $border-width transparent;
         border-top: none;
         border-bottom-left-radius: $border-radius-md;
         border-bottom-right-radius: $border-radius-md;
