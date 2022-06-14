@@ -17,22 +17,7 @@ export const projects = [
     ],
     link: "https://github.com/canvas-gamification",
     link_title: "Github",
-  },
-  {
-    name: "computational_puzzles",
-    title: "Computational Puzzles",
-    description: "A scavenger hunt that brings computational thinking to the outdoors",
-    note: "Helped develop from the ground up. From the application UI/UX and structure to the development of multiple pages that allows the users to interact with the puzzles by discovering them on a map or by various search queries.",
-    about: "",
-    tags:
-      ["Next.js", "SCSS", "Prisma", "NextAuth.js", "MapTiler Cloud API"],
-    images: [
-      "slide1.jpg",
-      "slide2.jpg",
-      "slide3.jpg"
-    ],
-    link: "https://github.com/Computational-Puzzles/ComputationalPuzzles",
-    link_title: "Github",
+    website: "https://gamification.ok.ubc.ca/"
   },
   {
     name: "teamable_analytics",
@@ -69,6 +54,23 @@ export const projects = [
       "slide7.jpg",
     ],
     link: "https://github.com/JadenBalogh/cosc360-project",
+    link_title: "Github",
+    website: "https://postn-dev.herokuapp.com/"
+  },
+  {
+    name: "computational_puzzles",
+    title: "Computational Puzzles",
+    description: "A scavenger hunt that brings computational thinking to the outdoors",
+    note: "Helped develop from the ground up. From the application UI/UX and structure to the development of multiple pages that allows the users to interact with the puzzles by discovering them on a map or by various search queries.",
+    about: "",
+    tags:
+      ["Next.js", "SCSS", "Prisma", "NextAuth.js", "MapTiler Cloud API"],
+    images: [
+      "slide1.jpg",
+      "slide2.jpg",
+      "slide3.jpg"
+    ],
+    link: "https://github.com/Computational-Puzzles/ComputationalPuzzles",
     link_title: "Github",
   },
   // {

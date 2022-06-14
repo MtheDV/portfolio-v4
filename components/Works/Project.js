@@ -17,11 +17,20 @@ const Project = ({project}) => {
           </div>
           <p className={projectStyles.description}>{project.description}</p>
           <p className={projectStyles.note}>{project.note}</p>
-          <a href={project.link}
-             target={'_blank'}
-             rel={'noopener noreferrer'}>
-            <button>View on {project.link_title} -&gt;</button>
-          </a>
+          <div className={projectStyles.preview__links}>
+            <a href={project.link}
+               target={'_blank'}
+               rel={'noopener noreferrer'}>
+              <button>View on {project.link_title} -&gt;</button>
+            </a>
+            {project.website &&
+              <a href={project.website}
+                 target={'_blank'}
+                 rel={'noopener noreferrer'}>
+                <button>View on Website -&gt;</button>
+              </a>
+            }
+          </div>
         </div>
         <div className={projectStyles.carousel}>
           <Carousel projectName={project.name} imageLinks={project.images}/>
