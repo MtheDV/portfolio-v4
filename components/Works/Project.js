@@ -61,7 +61,7 @@ const Project = ({project}) => {
             opacity: carouselVisible ? 1 : 0,
             zIndex: carouselVisible ? 40 : 0
           }}
-          duration={0.1}
+          duration={0.2}
           ease={'linear'}
         >
           <div className={projectStyles.carousel} ref={carouselRef}>
