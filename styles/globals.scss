@@ -23,7 +23,7 @@ body {
   margin: 0;
   font-family: 'Manrope', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-size: clamp(1rem, 1vw, 18px);
+  font-size: clamp(1rem, 1vw, 17px);
   color: $black;
 
   @include mobile {

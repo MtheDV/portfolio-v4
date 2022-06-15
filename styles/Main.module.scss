@@ -1,6 +1,12 @@
 @import './_mixins/breakpoints';
-
+@import './_mixins/styles';
 
 .main {
-  padding: 0 1rem 0 5rem;
+  display: flex;
+
+  &__content {
+    padding: 0 1rem 0 5rem;
+    width: 100%;
+    max-width: $gradient-breakpoint-width;
+  }
 }

@@ -15,7 +15,7 @@
     margin: 0;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 
     a {
       display: flex;
@@ -62,7 +62,7 @@
       @include mobile {
         width: 2.25rem;
         height: 2.25rem;
-        margin-right: 0.75rem;
+        margin-right: 1rem;
       }
     }
   }

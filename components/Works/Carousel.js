@@ -1,13 +1,23 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
 import carouselStyles from '../../styles/Works/Carousel.module.scss';
 
 const Carousel = ({projectName, imageLinks}) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
   
+  useEffect(() => {
+    const carouselInterval = setInterval(() => {
+      rotateCarousel();
+    }, 2000);
+    
+    return () => {
+      clearInterval(carouselInterval);
+    }
+  }, [carouselIndex]);
+  
   const rotateCarousel = () => {
     if (carouselIndex + 1 >= imageLinks.length) setCarouselIndex(0);
-    else setCarouselIndex(carouselIndex + 1);
+    else setCarouselIndex(index => index + 1);
   }
   
   return (

@@ -7,7 +7,11 @@
     background-color: $white;
     border: solid $border-width $dark-white;
     border-radius: $border-radius-md;
-    padding: 2rem;
+    padding: 3rem;
+
+    &_background {
+      background-color: $dark-white;
+    }
   }
 
   @mixin border($top_bottom) {

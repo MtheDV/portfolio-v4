@@ -3,6 +3,7 @@ import Landing from '../components/Landing/Landing';
 import Works from '../components/Works/Works';
 import mainStyles from '../styles/Main.module.scss';
 import {useRef} from "react";
+import SecretGradient from '../components/Effects/SecretGradient';
 
 export default function Home({projects}) {
   const worksRef = useRef(null);
@@ -14,12 +15,13 @@ export default function Home({projects}) {
   }
 
   return (
-    <>
-      <main className={mainStyles.main}>
+    <div className={mainStyles.main}>
+      <main className={mainStyles.main__content}>
         <Landing scrollToWorks={scrollToWorks}/>
         <Works refProp={worksRef} projects={projects}/>
       </main>
-    </>
+      <SecretGradient/>
+    </div>
   )
 }
 

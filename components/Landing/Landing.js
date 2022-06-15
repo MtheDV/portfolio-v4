@@ -4,7 +4,6 @@ import ToolLogos from './ToolLogos';
 import StickyContainer from '../Effects/StickyContainer';
 
 const Landing = ({scrollToWorks}) => {
-  
   return (
     <StickyContainer>
       <section className={landingStyles.content}>
@@ -22,7 +21,10 @@ const Landing = ({scrollToWorks}) => {
           </p>
         </div>
         <div className={landingStyles.content__actions}>
-          <button onClick={scrollToWorks}>Check out my works <span className={'button_arrow button_arrow__vertical'}>↓</span></button>
+          <button onClick={scrollToWorks}>
+            Check out my projects&nbsp;
+            <span className={'button_arrow button_arrow__vertical'}>↓</span>
+          </button>
           <a
             href={'/assets/resume/resume-mathew-de-vin.pdf'}
             target={'_blank'}

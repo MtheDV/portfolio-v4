@@ -6,7 +6,7 @@ import ScrollBanner from "../Effects/ScrollBanner";
 const Works = ({refProp, projects}) => {
   return (
     <>
-      <ScrollBanner refProp={refProp} text={'WORKS'}/>
+      <ScrollBanner refProp={refProp} text={'PROJECTS'}/>
       <section className={workStyles.works}>
         {projects.map((project, index) =>
           <Project key={`${project.name}-${index}`} project={project}/>
