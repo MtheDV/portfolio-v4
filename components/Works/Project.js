@@ -11,8 +11,8 @@ const Project = ({project}) => {
   const carouselRef = useRef();
   
   const onMouseMove = (event, containerRef) => {
-    let mouseX = event.pageX;
-    let mouseY = event.pageY - containerRef.current.offsetTop;
+    let mouseX = event.pageX + 20;
+    let mouseY = event.pageY + 20 - containerRef.current.offsetTop;
     if (mouseX + carouselRef.current.offsetWidth > window.innerWidth) {
       mouseX = window.innerWidth - carouselRef.current.offsetWidth;
     }
