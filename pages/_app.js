@@ -11,8 +11,8 @@ function MyApp({Component, pageProps}) {
     <>
       <DefaultSeo {...SEO}/>
       <Header/>
-      <NowPlaying />
-      <Contact />
+      <NowPlaying/>
+      <Contact/>
       <Component {...pageProps}/>
       <Footer/>
     </>

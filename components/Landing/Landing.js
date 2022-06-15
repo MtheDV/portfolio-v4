@@ -4,7 +4,6 @@ import ToolLogos from './ToolLogos';
 import StickyContainer from '../Effects/StickyContainer';
 
 const Landing = ({scrollToWorks}) => {
-  
   return (
     <StickyContainer>
       <section className={landingStyles.content}>
