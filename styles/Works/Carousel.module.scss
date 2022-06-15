@@ -9,12 +9,5 @@
   border: solid $border-width $dark-white;
   border-radius: $border-radius-md;
   overflow: hidden;
-
-  transition: all 0.25s;
-
-  &:hover {
-    cursor: pointer;
-    border-color: $accent;
-    border-radius: $border-radius-lg;
-  }
+  pointer-events: none;
 }

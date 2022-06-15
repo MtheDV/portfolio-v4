@@ -8,7 +8,7 @@ const Carousel = ({projectName, imageLinks}) => {
   useEffect(() => {
     const carouselInterval = setInterval(() => {
       rotateCarousel();
-    }, 3000);
+    }, 2000);
     
     return () => {
       clearInterval(carouselInterval);

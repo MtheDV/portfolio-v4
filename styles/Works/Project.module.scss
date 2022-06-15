@@ -1,20 +1,11 @@
 @import '../_mixins/colours';
 @import '../_mixins/breakpoints';
 @import '../_mixins/styles';
+@import '../_mixins/shadows';
 
 .preview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   width: 100%;
   overflow: hidden;
-
-  @include tablet {
-    grid-template-columns: 1fr 0;
-  }
-
-  @include mobile {
-    grid-template-columns: 1fr 0;
-  }
 
   &__links {
     display: flex;
@@ -28,6 +19,17 @@
 }
 
 .carousel {
+  position: absolute;
+  top: 0;
+  left: -5.15rem;
+  width: 32rem;
+  height: 20rem;
+  border-radius: $border-radius-md;
+  opacity: 0;
+  z-index: 0;
+
+  @include shadow();
+
   @include tablet {
     display: none;
   }
@@ -38,12 +40,6 @@
 }
 
 .descriptionContent {
-  margin-right: 5rem;
-  min-width: 65%;
-
-  @include mobile {
-    margin-right: 0;
-  }
 }
 
 .tags {
