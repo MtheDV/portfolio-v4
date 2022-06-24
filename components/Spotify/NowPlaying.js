@@ -14,7 +14,7 @@ const NowPlaying = () => {
       const nowPlayingData = await res.json();
       setNowPlaying(nowPlayingData);
     }
-    const interval = setInterval(getNowPlaying, 5000);
+    const interval = setInterval(getNowPlaying, 10000);
     getNowPlaying().then(() => {
     });
     return () => {
