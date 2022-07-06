@@ -2,7 +2,7 @@ export const projects = [
   {
     name: "canvas_gamification",
     title: "Canvas Gamification",
-    description: "Application providing student coding practices, assignments, quizzes, or exams",
+    description: "An online platform that allows university students to learn and grow in their programming skills.",
     note: "Refactored and modernized 30 plus different web page interfaces by implementing Taiga UI, a modern component library, allowing for the introduction of responsive design, accessible themes, and project UI scalability.",
     about: "",
     tags:
@@ -22,7 +22,7 @@ export const projects = [
   {
     name: "teamable_analytics",
     title: "Teamable Analytics",
-    description: "Team formation and analytics application",
+    description: "Algorithmically determined team formation from survey and peer evaluation responses.",
     note: "Currently a closed source project. Contributions include removing and refactoring thousands of lines of redundant code all the while implementing new code aided by code standards and unit tests to ensure code stability while developing the app.",
     about: "",
     tags:
@@ -39,7 +39,7 @@ export const projects = [
   {
     name: "postn",
     title: "Postn",
-    description: "An online discussions forum website",
+    description: "Online discussions forum website where users can write posts, and comment on each other.",
     note: "Built from the group up as part of a university project. Developed the application UI/UX and contributed towards the development of multiple user intractable pages from login/signup to viewing a post with comment threads.",
     about: "",
     tags:
@@ -60,7 +60,7 @@ export const projects = [
   {
     name: "computational_puzzles",
     title: "Computational Puzzles",
-    description: "A scavenger hunt that brings computational thinking to the outdoors",
+    description: "Hybrid approached scavenger hunt that helps young kids develop computational thinking skills.",
     note: "Helped develop from the ground up. From the application UI/UX and structure to the development of multiple pages that allows the users to interact with the puzzles by discovering them on a map or by various search queries.",
     about: "",
     tags:
