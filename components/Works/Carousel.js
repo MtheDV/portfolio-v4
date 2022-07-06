@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import Image from 'next/image';
 import carouselStyles from '../../styles/Works/Carousel.module.scss';
 
 const Carousel = ({projectName, imageLinks}) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
   
-  const rotateCarousel = () => {
+  const rotateCarousel = useCallback(() => {
     if (carouselIndex + 1 >= imageLinks.length) setCarouselIndex(0);
     else setCarouselIndex(index => index + 1);
-  }
+  }, [carouselIndex, imageLinks.length]);
   
   useEffect(() => {
     const carouselInterval = setInterval(() => {
