@@ -5,6 +5,11 @@ import carouselStyles from '../../styles/Works/Carousel.module.scss';
 const Carousel = ({projectName, imageLinks}) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
   
+  const rotateCarousel = () => {
+    if (carouselIndex + 1 >= imageLinks.length) setCarouselIndex(0);
+    else setCarouselIndex(index => index + 1);
+  }
+  
   useEffect(() => {
     const carouselInterval = setInterval(() => {
       rotateCarousel();
@@ -13,12 +18,7 @@ const Carousel = ({projectName, imageLinks}) => {
     return () => {
       clearInterval(carouselInterval);
     }
-  }, [carouselIndex]);
-  
-  const rotateCarousel = () => {
-    if (carouselIndex + 1 >= imageLinks.length) setCarouselIndex(0);
-    else setCarouselIndex(index => index + 1);
-  }
+  }, [carouselIndex, rotateCarousel]);
   
   return (
     <div className={carouselStyles.previewImage} onClick={() => rotateCarousel()}>
