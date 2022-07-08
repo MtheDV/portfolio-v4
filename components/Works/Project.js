@@ -58,8 +58,7 @@ const Project = ({project}) => {
           to={{
             x: mouseCoords[0],
             y: mouseCoords[1],
-            opacity: carouselVisible ? 1 : 0,
-            zIndex: carouselVisible ? 40 : 0
+            opacity: carouselVisible ? 1 : 0
           }}
           duration={0.2}
           ease={'linear'}
