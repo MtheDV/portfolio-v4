@@ -27,7 +27,7 @@
   border-radius: $border-radius-md;
   background-color: $white;
   opacity: 0;
-  z-index: 0;
+  z-index: 40;
   pointer-events: none;
 
   @include shadow();
